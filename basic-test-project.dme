@@ -7,16 +7,19 @@
 
 // BEGIN_FILE_DIR
 #define FILE_DIR .
-#define FILE_DIR "icon"
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include "map\testmap.dmm"
+#include "map\testshiftanimate.dmm"
+#include "src\_layers.dm"
 #include "src\basic-test-project.dm"
+#include "src\cookies.dm"
 #include "src\mob.dm"
+#include "src\pod_drop.dm"
+#include "src\table.dm"
 #include "src\turf.dm"
 // END_INCLUDE
 
