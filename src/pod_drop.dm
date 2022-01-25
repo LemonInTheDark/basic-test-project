@@ -41,16 +41,35 @@
 		set_trail_y(trail, i)
 		trails[i] = trail
 		trail.filters += filter("type" = "blur", "size" = 4)
+		
+// A pod, but with z shifting for its trail. No strange bahavior
+/obj/pod/z
 
-/obj/pod/better
-
-/obj/pod/better/set_trail_y(obj/trail, i)
+/obj/pod/z/set_trail_y(obj/trail, i)
 	trail.pixel_z = i * 32
 
-/mob/verb/test_drop_basic()
+// A pod, but with no trail filer. No strange behavior
+/obj/pod/no_filter
+
+/obj/pod/no_filter/make_trail()
+	trails = new /list(DROP_HEIGHT / 32)
+	for(var/i in 1 to length(trails))
+		var/obj/pod_trail/trail = new(loc)
+		if (i == 1)
+			trail.layer = FLY_LAYER
+		trail.pixel_x = 16
+		set_trail_y(trail, i)
+		trails[i] = trail
+		//trail.filters += filter("type" = "blur", "size" = 4)
+
+/mob/verb/test_drop_default()
 	var/obj/pod/our_pod = new(loc)
 	our_pod.drop()
 
-/mob/verb/test_drop_better()
-	var/obj/pod/better/our_pod = new(loc)
+/mob/verb/test_drop_z_shift()
+	var/obj/pod/z/our_pod = new(loc)
+	our_pod.drop()
+
+/mob/verb/test_drop_no_filter()
+	var/obj/pod/no_filter/our_pod = new(loc)
 	our_pod.drop()
