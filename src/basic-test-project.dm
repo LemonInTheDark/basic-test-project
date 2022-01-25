@@ -12,6 +12,10 @@
 
 // Make objects move 8 pixels per tick when walking
 
+/area/New()
+	rand_seed(23100123)
+	return ..()
+	
 /mob
 	step_size = 1
 
