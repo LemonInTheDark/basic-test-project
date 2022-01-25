@@ -9,6 +9,8 @@
 	icon = 'icons/big_icon.dmi'
 	icon_state = "pod"
 	layer = POD_LAYER
+	bound_x = 16
+	bound_height = 48
 
 #define DROP_HEIGHT 300
 #define PIXELS_PER_TICK 6
