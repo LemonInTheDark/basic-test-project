@@ -40,8 +40,10 @@ You can test this on the other map if you'd like, but I've set `map/testshiftani
 Objects on the left half are pixel y shifted, objects on the right half are pixel z shifted
 
 There are two verbs intended for testing here
+
 * test drop basic - This does a drop with pixel y shifted trails
-* test drop better - This does a drop with pixel z shifted trails
+* test drop z - This does a drop with pixel z shifted trails
+* test drop no filter - This does a drop without the gaussian blur
 
 ## Issue Two Point Five
 
