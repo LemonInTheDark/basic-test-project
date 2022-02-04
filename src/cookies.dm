@@ -23,3 +23,15 @@
 
 /obj/cookie/stable/random_y()
 	pixel_z = rand(-STRAY, STRAY)
+
+#undef STRAY
+
+#define STRAY 1
+
+/obj/cookie/static_shift
+
+/obj/cookie/static_shift/random_y()
+	pixel_y = STRAY
+
+/obj/cookie/static_shift/random_x()
+	pixel_x = STRAY
