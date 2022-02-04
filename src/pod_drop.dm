@@ -3,6 +3,8 @@
 	icon_state = "smoke"
 	layer = TRAIL_LAYER
 	alpha = 128
+	bound_width = 24
+	bound_x = 4
 
 /obj/pod
 	var/list/trails
