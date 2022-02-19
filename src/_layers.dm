@@ -6,3 +6,6 @@
 #define TRAIL_LAYER 300
 #define POD_LAYER 301
 //MOB_LAYER 4 (Internal define)
+
+#define TURF_PLANE -1
+#define ATOM_PLANE 1 

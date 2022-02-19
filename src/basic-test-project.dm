@@ -21,3 +21,6 @@
 
 /obj
 	step_size = 1
+
+/atom
+	plane = ATOM_PLANE

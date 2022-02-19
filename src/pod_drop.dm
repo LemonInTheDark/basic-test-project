@@ -15,7 +15,7 @@
 	bound_height = 48
 
 #define DROP_HEIGHT 300
-#define PIXELS_PER_TICK 6
+#define PIXELS_PER_TICK 1
 
 /obj/pod/proc/drop()
 	set_y()
@@ -28,10 +28,11 @@
 
 /obj/pod/proc/set_y()
 	pixel_y = DROP_HEIGHT
-	animate(src, pixel_y = 0, time = DROP_HEIGHT / PIXELS_PER_TICK)
+	//animate(src, pixel_y = 0, time = DROP_HEIGHT / PIXELS_PER_TICK)
 
 /obj/pod/proc/set_trail_y(obj/trail, i)
-	trail.pixel_y = i * 32
+	trail.pixel_y = (i * 32)
+	//trail.color = rgb((i % 3 == 1) * 255, (i % 3 == 2) * 255, (i % 3 == 0) * 255)
 
 /obj/pod/proc/make_trail()
 	trails = new /list(DROP_HEIGHT / 32)
@@ -39,7 +40,7 @@
 		var/obj/pod_trail/trail = new(loc)
 		if (i == 1)
 			trail.layer = FLY_LAYER
-		trail.pixel_x = 16
+		trail.pixel_x = usr.pixel_y + 16
 		set_trail_y(trail, i)
 		trails[i] = trail
 		trail.filters += filter("type" = "blur", "size" = 4)
@@ -49,6 +50,7 @@
 
 /obj/pod/z/set_trail_y(obj/trail, i)
 	trail.pixel_z = i * 32
+	trail.color = rgb((i % 3 == 1) * 255, (i % 3 == 2) * 255, (i % 3 == 0) * 255)
 
 // A pod, but with no trail filer. No strange behavior
 /obj/pod/no_filter

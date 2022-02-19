@@ -26,7 +26,7 @@
 
 #undef STRAY
 
-#define STRAY 1
+#define STRAY 0
 
 /obj/cookie/static_shift
 
