@@ -14,7 +14,6 @@
     return ..()
 
 /turf/floor/a_source
-	vis_flags = VIS_INHERIT_ID
 
 /turf/floor/a_source/New()
     tag = "a_source"
