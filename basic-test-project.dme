@@ -7,16 +7,16 @@
 
 // BEGIN_FILE_DIR
 #define FILE_DIR .
-#define FILE_DIR "icon"
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include "map\testmap.dmm"
+#include "map\longmap.dmm"
 #include "src\basic-test-project.dm"
 #include "src\mob.dm"
+#include "src\obj.dm"
 #include "src\turf.dm"
 // END_INCLUDE
 
