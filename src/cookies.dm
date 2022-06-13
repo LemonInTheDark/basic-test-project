@@ -18,8 +18,3 @@
 
 /obj/cookie/proc/random_state()
 	icon_state = pick(icon_states(icon))
-
-/obj/cookie/stable
-
-/obj/cookie/stable/random_y()
-	pixel_z = rand(-STRAY, STRAY)

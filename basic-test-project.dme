@@ -14,12 +14,13 @@
 
 // BEGIN_INCLUDE
 #include "map\testshiftanimate.dmm"
+#include "skins\primary.dmf"
 #include "src\_layers.dm"
 #include "src\basic-test-project.dm"
 #include "src\cookies.dm"
 #include "src\mob.dm"
 #include "src\pod_drop.dm"
-#include "src\table.dm"
 #include "src\turf.dm"
+#include "src\windows.dm"
 // END_INCLUDE
 

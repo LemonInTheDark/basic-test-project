@@ -1,0 +1,153 @@
+
+window "mainwindow"
+	elem "mainwindow"
+		type = MAIN
+		pos = 281,0
+		size = 640x440
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
+		is-default = true
+		saved-params = "pos;size;is-minimized;is-maximized"
+		statusbar = false
+		macro = "default"
+		menu = "menu"
+		outer-size = 656x499
+		inner-size = 640x440
+	elem "split"
+		type = CHILD
+		pos = 3,0
+		size = 634x440
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = none
+		saved-params = "splitter"
+		left = "mapwindow"
+		right = "infowindow"
+		is-vert = true
+	elem "asset_cache_browser"
+		type = BROWSER
+		pos = 0,0
+		size = 200x200
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
+		is-visible = false
+		saved-params = ""
+	elem "tooltip"
+		type = BROWSER
+		pos = 0,0
+		size = 999x999
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
+		is-visible = false
+		saved-params = ""
+
+window "mapwindow"
+	elem "mapwindow"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		is-pane = true
+		outer-size = 656x538
+		inner-size = 640x499
+		on-status = ".winset \"status_bar.text=[[*]]\" "
+	elem "map"
+		type = MAP
+		pos = 0,0
+		size = 640x480
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = "Arial"
+		font-size = 7
+		is-default = true
+		right-click = true
+		saved-params = "zoom;letterbox;zoom-mode"
+		style = ".center { text-align: center; } .maptext { font-family: 'Small Fonts'; font-size: 7px; -dm-text-outline: 1px black; color: white; line-height: 1.1; } .command_headset { font-weight: bold;\tfont-size: 8px; } .small { font-size: 6px; } .big { font-size: 8px; } .reallybig { font-size: 8px; } .extremelybig { font-size: 8px; } .greentext { color: #00FF00; font-size: 7px; } .redtext { color: #FF0000; font-size: 7px; } .clown { color: #FF69Bf; font-size: 7px;  font-weight: bold; } .his_grace { color: #15D512; } .hypnophrase { color: #0d0d0d; font-weight: bold; } .yell { font-weight: bold; } .italics { font-size: 6px; }"
+	elem "status_bar"
+		type = LABEL
+		pos = 0,464
+		size = 280x16
+		anchor1 = 0,100
+		anchor2 = -1,-1
+		text-color = #ffffff
+		background-color = #222222
+		border = line
+		saved-params = ""
+		text = ""
+		align = left
+
+window "infowindow"
+	elem "infowindow"
+		type = MAIN
+		pos = 281,0
+		size = 640x119
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		is-pane = true
+		outer-size = 656x177
+		inner-size = 640x138
+	elem "info1"
+		type = INFO
+		pos = 0,0
+		size = 640x104
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = ""
+		tab-background-color = none
+	elem "info"
+		type = CHILD
+		pos = 0,472
+		size = 640x19
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = none
+		saved-params = "splitter"
+		left = "statwindow"
+		right = "outputwindow"
+		is-vert = false
+
+window "outputwindow"
+	elem "outputwindow"
+		type = MAIN
+		pos = 281,0
+		size = 640x504
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #ffffff
+		border = sunken
+		saved-params = "pos;size;is-minimized;is-maximized"
+		is-pane = true
+		can-scroll = vertical
+		outer-size = 656x562
+		inner-size = 640x523
+	elem "output"
+		type = OUTPUT
+		pos = 0,0
+		size = 640x504
+		anchor1 = 0,0
+		anchor2 = 100,10
+		font-size = 8
+		is-default = true
+		border = sunken
+		saved-params = ""
+
+window "popupwindow"
+	elem "popupwindow"
+		type = MAIN
+		pos = 281,0
+		size = 120x120
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		statusbar = false
+		can-resize = false
+

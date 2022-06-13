@@ -5,12 +5,12 @@
 "e" = (/obj/cookie,/obj/cookie,/obj/cookie,/turf/floor,/area)
 "f" = (/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/turf/floor,/area)
 "g" = (/obj/cookie,/turf/floor,/area)
-"h" = (/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/turf/floor,/area)
-"i" = (/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/turf/floor,/area)
-"j" = (/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/turf/floor,/area)
+"h" = (/obj/cookie,/obj/cookie,/obj/cookie,/turf/floor,/area)
+"i" = (/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/turf/floor,/area)
+"j" = (/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/turf/floor,/area)
 "k" = (/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/turf/floor,/area)
-"l" = (/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/turf/floor,/area)
-"m" = (/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/obj/cookie/stable,/turf/floor,/area)
+"l" = (/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/turf/floor,/area)
+"m" = (/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/obj/cookie,/turf/floor,/area)
 "n" = (/obj/cookie,/obj/cookie,/turf/floor,/area)
 
 (1,1,1) = {"
