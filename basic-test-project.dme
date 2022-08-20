@@ -14,7 +14,6 @@
 
 // BEGIN_INCLUDE
 #include "map\testshiftanimate.dmm"
-#include "skins\primary.dmf"
 #include "src\_layers.dm"
 #include "src\basic-test-project.dm"
 #include "src\cookies.dm"
