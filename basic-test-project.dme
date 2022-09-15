@@ -20,6 +20,5 @@
 #include "src\mob.dm"
 #include "src\pod_drop.dm"
 #include "src\turf.dm"
-#include "src\windows.dm"
 // END_INCLUDE
 
