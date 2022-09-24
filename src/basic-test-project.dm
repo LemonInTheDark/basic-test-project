@@ -15,5 +15,10 @@
 /mob
 	step_size = 1
 
+/mob/New()
+	x = 5
+	y = 5
+	. = ..()
+
 /obj
 	step_size = 1

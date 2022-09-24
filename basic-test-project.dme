@@ -13,10 +13,12 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
+#include "map\muli-hell.dmm"
 #include "map\testshiftanimate.dmm"
 #include "src\_layers.dm"
 #include "src\basic-test-project.dm"
 #include "src\cookies.dm"
+#include "src\image.dm"
 #include "src\mob.dm"
 #include "src\pod_drop.dm"
 #include "src\turf.dm"

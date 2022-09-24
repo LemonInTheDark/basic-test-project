@@ -1,0 +1,31 @@
+"a" = (/turf/wall,/area)
+"b" = (/turf/floor,/area)
+"c" = (/turf/floor/image_spawn,/area)
+"d" = (/turf/floor/below,/area)
+"e" = (/obj/cookie,/turf/floor/image_holds,/area)
+
+(1,1,1) = {"
+aaaaaaaaaa
+abbbbbbbba
+abbbdbbbba
+abbbbbbbba
+abbbbbbcba
+abbbbbbbba
+abbbbbbbba
+abbbbbbbba
+abbbbbbbba
+aaaaaaaaaa
+"}
+
+(1,1,2) = {"
+aaaaaaaaaa
+abbbbbbbba
+abbbebbbba
+abbbbbbbba
+abbbbbbbba
+abbbbbbbba
+abbbbbbbba
+abbbbbbbba
+abbbbbbbba
+aaaaaaaaaa
+"}
