@@ -44,11 +44,3 @@
 
 /obj/pod/better/set_trail_y(obj/trail, i)
 	trail.pixel_z = i * 32
-
-/mob/verb/test_drop_basic()
-	var/obj/pod/our_pod = new(loc)
-	our_pod.drop()
-
-/mob/verb/test_drop_better()
-	var/obj/pod/better/our_pod = new(loc)
-	our_pod.drop()
