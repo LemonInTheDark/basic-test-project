@@ -14,7 +14,6 @@
 /obj/plane_master/parent
 	plane = PARENT_PLANE
 	render_target = "*parent"
-	transform
 
 /mob/verb/scale()
 	var/obj/lad = locate(/obj/plane_master/parent) in client.screen
