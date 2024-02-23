@@ -4,11 +4,8 @@
 #define PARENT_PLANE 10
 #define CHILD_PLANE 11
 
-/mob
+/atom
 	plane = PARENT_PLANE
-
-/turf/wall
-	plane = CHILD_PLANE
 
 /obj/plane_master
 	appearance_flags = PLANE_MASTER
@@ -17,15 +14,15 @@
 /obj/plane_master/parent
 	plane = PARENT_PLANE
 	render_target = "*parent"
-	blend_mode = BLEND_MULTIPLY
+	transform
 
-/mob/verb/alpha_254()
+/mob/verb/scale()
 	var/obj/lad = locate(/obj/plane_master/parent) in client.screen
-	lad.alpha = 254
+	lad.transform = lad.transform.Scale(2)
 
-/mob/verb/alpha_255()
+/mob/verb/descale()
 	var/obj/lad = locate(/obj/plane_master/parent) in client.screen
-	lad.alpha = 255
+	lad.transform = new /matrix()
 
 /mob/verb/unlink_parent()
 	var/obj/lad = locate(/obj/plane_master/parent) in client.screen
@@ -39,13 +36,8 @@
 	render_source = "*parent"
 	plane = CHILD_PLANE
 
-// Child plane master shrinks its contents
 /obj/plane_master/child
 	plane = CHILD_PLANE
-
-/obj/plane_master/child/New()
-	. = ..()
-	transform = transform.Scale(0.8)
 
 /client/proc/create_screen_obj(obj_type)
 	var/obj/screen_obj = new obj_type()
